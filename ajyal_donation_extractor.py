@@ -46,7 +46,6 @@ def download_email(service, message_id, filename):
     """Downloads the email and saves it as an .eml file."""
     msg = service.users().messages().get(userId='me', id=message_id['id'], format='raw').execute()
     msg_str = base64.urlsafe_b64decode(msg['raw'].encode('ASCII'))
-    mime_msg = email.message_from_bytes(msg_str)
 
     with open(filename, 'wb') as f:
         f.write(msg_str)
