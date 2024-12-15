@@ -1,0 +1,22 @@
+# Ignore the credentials file
+credentials.json
+
+# Ignore the token pickle file
+token.pickle
+
+# Ignore the emails folder
+emails/
+
+# Ignore csv files
+*.csv
+
+# Ignore virtual environment directories
+venv/
+.venv/
+
+# Ignore other common Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
